@@ -1,5 +1,23 @@
-export default function XoGame(){
+import { useState } from "react";
+
+export default function MyButton(){
+    const [count, setCount] = useState(0);
+
+    function handleClick(){
+        setCount(count+1)
+    }
+    function reset(){
+        setCount(0)
+    }
     return(
-        <h1>hello</h1>
+        <div>
+
+        <button onClick={handleClick}>
+            you clicked {count} times!
+        </button>
+        <button onClick={reset}>
+            reset
+        </button>
+        </div>
     )
 }

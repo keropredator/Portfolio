@@ -6,10 +6,10 @@ export default function Layout() {
     <Grid container>
       <Grid item xs={12}>
         <Box>
-          <AppBar position="static">
+          <AppBar position="static" >
             <Toolbar>
               <NavLink to="/XoGame" >
-                <Button>Hello</Button>
+                <Button>XoGame</Button>
               </NavLink>
             </Toolbar>
           </AppBar>
